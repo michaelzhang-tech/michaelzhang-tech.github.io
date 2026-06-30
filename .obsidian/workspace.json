@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "9cec2c54d5c361f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "da548e7852d64580",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21fb4b1c6c3f211c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/content/post/Astro-vs-Hugo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Astro-vs-Hugo"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6da115cfec3fb307",
+    "type": "split",
+    "children": [
+      {
+        "id": "1afdd711f32f36a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff306235e345df46",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "78a9e95114a22ba1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "fab4f78914f71ce8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7eacfdf23c5cdb19",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ef0595ad693a282",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ace7c734a1bcc92",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/content/post/first-post.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "first-post 的反向链接列表"
+            }
+          },
+          {
+            "id": "9fb120354693ea9d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/content/post/first-post.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "first-post 的出链列表"
+            }
+          },
+          {
+            "id": "c5f10e3da15d853b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "56721f332d835702",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "773c9fea24ee3088",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/content/post/first-post.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "first-post 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "21fb4b1c6c3f211c",
+  "lastOpenFiles": [
+    "src/content/post/test.mdx",
+    "src/content/post/test.md.md",
+    "src/content/post/Astro-vs-Hugo.md",
+    "src/content/post/first-post.md",
+    "src/content/podcast/ep1a.md",
+    "src/content/post/Astro-vs-Hugo.mdx",
+    "src/content/podcast/未命名.md",
+    "src/content/podcast/ep2b.md",
+    "src/content/podcast/ep2a.md",
+    "src/content/podcast/ep1b.md",
+    "templates/research.md",
+    "templates/post.md",
+    "templates/podcast.md",
+    "scripts/new-post.js"
+  ]
+}
