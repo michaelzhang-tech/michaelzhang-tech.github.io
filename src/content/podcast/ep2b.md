@@ -1,7 +1,6 @@
 ---
 title: "Episode02 Continue - PartB"
 date: 2026-06-29T13:32:57+08:00
-draft: true
 
 tags:
   - podcast
