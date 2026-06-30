@@ -43,7 +43,7 @@ const researchCollection = defineCollection({
 });
 
 export const collections = {
-  blog: blogCollection,
+  post: blogCollection,
   podcast: podcastCollection,
   research: researchCollection,
 };
