@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const podcasts = await getCollection('podcast');
+  return podcasts.map((podcast) => ({
+    params: { slug: podcast.id },
+    props: { podcast },
+  }));
+}
+
+const { podcast } = Astro.props;
+const { Content } = await render(podcast);
+
+const formattedDate = podcast.data.pubDate.toLocaleDateString('zh-CN', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout title={`EP${podcast.data.episodeNumber}: ${podcast.data.title} - Podcast`} description={podcast.data.description}>
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <header class="mb-10">
+      <div class="flex items-center gap-2 text-sm text-blue-600 font-medium mb-4">
+        <span>第 {podcast.data.episodeNumber} 期</span>
+        <span>·</span>
+        <span>{podcast.data.duration}</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{podcast.data.title}</h1>
+      <time class="text-slate-500">{formattedDate}</time>
+    </header>
+    
+    {podcast.data.audioUrl && (
+      <div class="mb-10 p-6 bg-slate-100 rounded-xl">
+        <audio controls class="w-full">
+          <source src={podcast.data.audioUrl} type="audio/mpeg" />
+          您的浏览器不支持音频播放。
+        </audio>
+      </div>
+    )}
+    
+    <div class="prose prose-slate prose-lg max-w-none">
+      <Content />
+    </div>
+    
+    <footer class="mt-16 pt-8 border-t border-slate-200">
+      <a href="/podcast" class="text-blue-600 hover:text-blue-700 font-medium">← 返回播客列表</a>
+    </footer>
+  </article>
+</BaseLayout>

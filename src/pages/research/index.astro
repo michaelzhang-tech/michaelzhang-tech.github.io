@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentCard from '../../components/ContentCard.astro';
+import { getCollection } from 'astro:content';
+
+const researchs = (await getCollection('research'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout title="Research - Michael Zhang" description="技术调研报告">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <header class="mb-12">
+      <h1 class="text-4xl font-bold text-slate-900 mb-4">调研报告</h1>
+      <p class="text-lg text-slate-600">深度技术调研和行业分析报告</p>
+    </header>
+    
+    <div class="grid md:grid-cols-2 gap-6">
+      {researchs.map((research) => (
+        <ContentCard
+          title={research.data.title}
+          description={research.data.description}
+          date={research.data.pubDate}
+          href={`/research/${research.id}/`}
+          tags={research.data.tags}
+          meta={research.data.category}
+        />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

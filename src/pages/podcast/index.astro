@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentCard from '../../components/ContentCard.astro';
+import { getCollection } from 'astro:content';
+
+const podcasts = (await getCollection('podcast'))
+  .sort((a, b) => b.data.episodeNumber - a.data.episodeNumber);
+---
+
+<BaseLayout title="Podcast - Michael Zhang" description="技术播客节目">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <header class="mb-12">
+      <h1 class="text-4xl font-bold text-slate-900 mb-4">播客节目</h1>
+      <p class="text-lg text-slate-600">探讨技术趋势、分享行业见解</p>
+    </header>
+    
+    <div class="space-y-6">
+      {podcasts.map((podcast) => (
+        <ContentCard
+          title={`EP${podcast.data.episodeNumber}: ${podcast.data.title}`}
+          description={podcast.data.description}
+          date={podcast.data.pubDate}
+          href={`/podcast/${podcast.id}/`}
+          tags={podcast.data.tags}
+          meta={`${podcast.data.duration}`}
+        />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,62 @@
+---
+import { NAV_LINKS } from '../consts';
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors">
+        Michael Zhang
+      </a>
+      
+      <div class="hidden md:flex items-center space-x-8">
+        {NAV_LINKS.map((link) => (
+          <a
+            href={link.href}
+            class={`text-sm font-medium transition-colors ${
+              currentPath === link.href || currentPath.startsWith(link.href + '/')
+                ? 'text-blue-600'
+                : 'text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            {link.name}
+          </a>
+        ))}
+      </div>
+      
+      <button 
+        id="mobile-menu-btn" 
+        class="md:hidden p-2 text-slate-600 hover:text-slate-900"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      {NAV_LINKS.map((link) => (
+        <a
+          href={link.href}
+          class={`block py-2 text-sm font-medium ${
+            currentPath === link.href
+              ? 'text-blue-600'
+              : 'text-slate-600 hover:text-slate-900'
+          }`}
+        >
+          {link.name}
+        </a>
+      ))}
+    </div>
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>
