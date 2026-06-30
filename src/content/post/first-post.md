@@ -13,7 +13,7 @@ I am building a personal knowledge system around AI infrastructure, storage, and
 
 ## What this site is
 
-This is not a blog. It is a system:
+This is not a post. It is a system:
 
 - Research notes
 - System design thinking

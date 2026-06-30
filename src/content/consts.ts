@@ -1,11 +1,31 @@
-export const SITE_TITLE = 'Michael Zhang';
-export const SITE_DESCRIPTION = 'Personal website of Michael Zhang - Post, Podcast, Research';
-export const SITE_URL = 'https://michaelzhang-tech.github.io';
+// src/lib/const.ts
 
-export const NAV_LINKS = [
+export const SITE = {
+  title: 'Michael Zhang',
+  description: 'AI Infra · Storage · Networking · Systems Thinking',
+  author: 'Michael Zhang',
+  siteUrl: 'https://michaelzhang-tech.github.io',
+};
+
+export const NAVIGATION = [
   { name: 'Home', href: '/' },
-  { name: 'Post', href: '/post' },
-  { name: 'Podcast', href: '/podcast' },
-  { name: 'Research', href: '/research' },
-  { name: 'About', href: '/about' },
+  { name: 'Posts', href: '/post/' },
+  { name: 'Podcast', href: '/podcast/' },
+  { name: 'Research', href: '/research/' },
+  { name: 'About', href: '/about/' },
+];
+
+export const SOCIALS = [
+  {
+    name: 'GitHub',
+    url: 'https://github.com/michaelzhang-tech',
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/lei-zhang-6257aa1a/',
+  },
+  {
+    name: 'Email',
+    url: 'mailto:michael23leiz@gmail.com',
+  },
 ];
