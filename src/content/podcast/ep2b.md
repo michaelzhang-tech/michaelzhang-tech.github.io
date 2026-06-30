@@ -1,6 +1,7 @@
 ---
 title: "Episode02 Continue - PartB"
-date: 2026-06-29T13:32:57+08:00
+pubDate: 2026-06-29
+description: "Ep02b Data Pulse Podcast"
 
 tags:
   - podcast

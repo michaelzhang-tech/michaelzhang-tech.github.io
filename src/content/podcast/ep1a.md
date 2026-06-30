@@ -1,7 +1,7 @@
 ---
 title: "Episode01 PartA - 探索性能与灵活性的极限，深入解析NetApp AFF A系列全闪存产品"
-date: 2026-06-29T13:03:09+08:00
-draft: true
+pubDate: 2026-06-29
+description: "Ep01a Data Pulse Podcast"
 
 tags:
   - podcast

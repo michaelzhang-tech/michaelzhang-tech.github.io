@@ -1,6 +1,7 @@
 ---
 title: "First Step: Building My Data Infrastructure Knowledge Hub"
-date: 2026-06-29
+pubDate: 2026-06-29
+description: "first post"
 
 tags:
   - post
