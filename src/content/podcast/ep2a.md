@@ -1,19 +1,14 @@
 ---
 title: "Episode02 PartA - How FlexGroup unleashes the full performance potential of a storage cluster."
 pubDate: 2026-06-29T13:32:53+08:00
-description: "Ep02a Data Pulse Podcast"
+description: "How FlexGroup unleashes the full performance potential of a storage cluster"
 
 tags:
   - podcast
   - data pulse
 
-categories:
-  - podcast
-
-episode: 2
-part: "A"
-series: "Data Pulse"
-summary: "How FlexGroup unleashes the full performance potential of a storage cluster"
+episodeNumber: 2
+duration: "1:08:08"
 ---
 
 ## Episode Summary
