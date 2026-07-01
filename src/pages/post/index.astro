@@ -7,11 +7,11 @@ const posts = (await getCollection('post'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<BaseLayout title="Post - Michael Zhang" description="技术博客文章">
+<BaseLayout title="Blog - Michael Zhang" description="技术博客文章">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <header class="mb-12">
-      <h1 class="text-4xl font-bold text-slate-900 mb-4">博客文章</h1>
-      <p class="text-lg text-slate-600">分享技术见解、学习心得和开发经验</p>
+      <h1 class="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">博客文章</h1>
+      <p class="text-lg text-slate-600 dark:text-slate-400">分享技术见解、学习心得和开发经验</p>
     </header>
     
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

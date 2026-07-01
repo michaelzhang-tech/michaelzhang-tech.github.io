@@ -25,13 +25,13 @@ const formattedDate = post.data.pubDate.toLocaleDateString('zh-CN', {
     <header class="mb-10">
       <div class="flex flex-wrap gap-2 mb-4">
         {post.data.tags.map((tag) => (
-          <span class="px-3 py-1 text-sm font-medium bg-blue-50 text-blue-600 rounded-full">
+          <span class="px-3 py-1 text-sm font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">
             {tag}
           </span>
         ))}
       </div>
-      <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{post.data.title}</h1>
-      <div class="flex items-center gap-4 text-slate-500">
+      <h1 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">{post.data.title}</h1>
+      <div class="flex items-center gap-4 text-slate-500 dark:text-slate-400">
         <time>{formattedDate}</time>
         {post.data.readingTime && (
           <>
@@ -46,8 +46,8 @@ const formattedDate = post.data.pubDate.toLocaleDateString('zh-CN', {
       <Content />
     </div>
     
-    <footer class="mt-16 pt-8 border-t border-slate-200">
-      <a href="/post" class="text-blue-600 hover:text-blue-700 font-medium">← 返回博客列表</a>
+    <footer class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-700">
+      <a href="/post" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium">← 返回博客列表</a>
     </footer>
   </article>
 </BaseLayout>

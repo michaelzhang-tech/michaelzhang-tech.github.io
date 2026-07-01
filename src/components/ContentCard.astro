@@ -17,9 +17,9 @@ const formattedDate = date.toLocaleDateString('zh-CN', {
 });
 ---
 
-<article class="group bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg transition-shadow">
+<article class="group bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-lg dark:hover:shadow-slate-900/50 transition-shadow">
   <a href={href} class="block p-6">
-    <div class="flex items-center gap-2 text-sm text-slate-500 mb-3">
+    <div class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-3">
       <time>{formattedDate}</time>
       {meta && (
         <>
@@ -29,18 +29,18 @@ const formattedDate = date.toLocaleDateString('zh-CN', {
       )}
     </div>
     
-    <h2 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-2">
+    <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2">
       {title}
     </h2>
     
-    <p class="text-slate-600 line-clamp-2 mb-4">
+    <p class="text-slate-600 dark:text-slate-400 line-clamp-2 mb-4">
       {description}
     </p>
     
     {tags.length > 0 && (
       <div class="flex flex-wrap gap-2">
         {tags.map((tag) => (
-          <span class="px-3 py-1 text-xs font-medium bg-slate-100 text-slate-600 rounded-full">
+          <span class="px-3 py-1 text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full">
             {tag}
           </span>
         ))}

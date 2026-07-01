@@ -17,23 +17,23 @@ const latestResearch = (await getCollection('research'))
 ---
 
 <BaseLayout>
-  <section class="bg-slate-900 text-white py-24">
+  <section class="bg-slate-900 dark:bg-slate-950 text-white py-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
         <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Hi, I'm <span class="text-blue-400">Michael Zhang</span>
+          Hi, I'm <span class="text-blue-400 dark:text-blue-300">Michael Zhang</span>
         </h1>
-        <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+        <p class="text-xl text-slate-300 dark:text-slate-400 mb-8 leading-relaxed">
           技术爱好者 · 播客创作者 · 研究员
         </p>
-        <p class="text-lg text-slate-400 mb-10 leading-relaxed">
+        <p class="text-lg text-slate-400 dark:text-slate-500 mb-10 leading-relaxed">
           在这里，我分享技术博客、播客节目和深度研究报告。探索技术的边界，记录思考的痕迹。
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="/post" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
             阅读博客
           </a>
-          <a href="/about" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg transition-colors">
+          <a href="/about" class="px-6 py-3 bg-slate-800 dark:bg-slate-700 hover:bg-slate-700 dark:hover:bg-slate-600 text-white font-medium rounded-lg transition-colors">
             了解更多
           </a>
         </div>
@@ -44,8 +44,8 @@ const latestResearch = (await getCollection('research'))
   <section class="py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between mb-8">
-        <h2 class="text-2xl font-bold text-slate-900">最新博客</h2>
-        <a href="/post" class="text-blue-600 hover:text-blue-700 font-medium">查看全部 →</a>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">最新博客</h2>
+        <a href="/post" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium">查看全部 →</a>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {latestPosts.map((post) => (
@@ -61,11 +61,11 @@ const latestResearch = (await getCollection('research'))
     </div>
   </section>
 
-  <section class="py-16 bg-white">
+  <section class="py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between mb-8">
-        <h2 class="text-2xl font-bold text-slate-900">最新播客</h2>
-        <a href="/podcast" class="text-blue-600 hover:text-blue-700 font-medium">查看全部 →</a>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">最新播客</h2>
+        <a href="/podcast" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium">查看全部 →</a>
       </div>
       <div class="grid md:grid-cols-2 gap-6">
         {latestPodcasts.map((podcast) => (
@@ -85,8 +85,8 @@ const latestResearch = (await getCollection('research'))
   <section class="py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between mb-8">
-        <h2 class="text-2xl font-bold text-slate-900">最新研究</h2>
-        <a href="/research" class="text-blue-600 hover:text-blue-700 font-medium">查看全部 →</a>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">最新研究</h2>
+        <a href="/research" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium">查看全部 →</a>
       </div>
       <div class="grid md:grid-cols-2 gap-6">
         {latestResearch.map((research) => (

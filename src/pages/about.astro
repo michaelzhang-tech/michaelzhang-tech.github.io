@@ -5,13 +5,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="About - Michael Zhang" description="关于 Michael Zhang">
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <header class="mb-12 text-center">
-      <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-slate-200 overflow-hidden">
+      <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
         <img src="/images/avatar.jpg" alt="Michael Zhang" class="w-full h-full object-cover" />
       </div>
-      <h1 class="text-4xl font-bold text-slate-900 mb-4">About me</h1>
-      <p class="text-lg text-slate-600">技术探索者 · 终身学习者</p>
+      <h1 class="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">About me</h1>
+      <p class="text-lg text-slate-600 dark:text-slate-400">技术探索者 · 终身学习者</p>
     </header>
     
+    <!-- 去掉 dark:prose-invert，用 CSS 控制 -->
     <div class="prose prose-slate prose-lg max-w-none">
       <h2>Hi, I'm Michael Zhang</h2>
       <p>一名热爱技术的开发者和创作者。</p>
@@ -34,7 +35,7 @@ This website is my Digital HQ—a place where I organize my research, share tech
       <h2>What you'll find here</h2>
       <div class="flex flex-wrap gap-2 not-prose">
         {['AI Infrastructure', 'Enterprise Storage', 'Networking Technologies', 'Data Security & Cyber Resilience', 'System Architecture', 'Technical Research'].map((tech) => (
-          <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">{tech}</span>
+          <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-full text-sm font-medium">{tech}</span>
         ))}
       </div>
       
