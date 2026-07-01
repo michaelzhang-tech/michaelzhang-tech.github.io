@@ -8,7 +8,6 @@ tags:
 episodeNumber: 1
 duration: "55:03"
 ---
-![Data Pulse](/images/Pasted%20image%2020260629140730.png)
 
 ## Episode Summary
 Why does storage keep getting faster while performance challenges never seem to disappear?
