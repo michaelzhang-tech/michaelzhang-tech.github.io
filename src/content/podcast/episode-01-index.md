@@ -46,4 +46,4 @@ tags:
 
 ---
 
-💬 **讨论**：你的场景中遇到过哪些存储性能瓶颈？欢迎在 [LinkedIn](https://linkedin.com/in/...) 分享你的经验。
+💬 **讨论**：你的场景中遇到过哪些存储性能瓶颈？欢迎在 [LinkedIn](https://www.linkedin.com/in/lei-zhang-6257aa1a/) 分享你的经验。
